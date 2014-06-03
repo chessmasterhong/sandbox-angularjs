@@ -7,12 +7,12 @@
     </head>
 
     <body>
-        <div class="container" data-ng-init="names=['Alice', 'Bob', 'Carol', 'Dave', 'Eve', 'Frank']">
+        <div data-ng-init="customers=[{ name: 'Alice', city: 'Miami' }, { name: 'Bob', city: 'New York' }, { name: 'Carol', city: 'Memphis' }, { name: 'Dave', city: 'Los Angeles' }, { name: 'Eve', city: 'Honolulu' }, { name: 'Frank', city: 'Houston' }]">
             <p>Name: <input type="text" data-ng-model="name"></p>
             <p>Hello, {{ name }}!</p>
 
             <ul>
-                <li data-ng-repeat="personName in names">{{ personName }}</li>
+                <li data-ng-repeat="customer in customers | filter: name">{{ customer.name }} - {{ customer.city }}</li>
             </ul>
         </div>
 
