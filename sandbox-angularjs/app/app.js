@@ -1,21 +1,18 @@
-var demoApp = angular.module('demoApp', [
-    'ngRoute'
-]);
-
-demoApp.config(function($routeProvider) {
-    $routeProvider
-        .when('/home', {
-            controller: 'simpleController',
+angular.module('demoApp', [
+    'ui.router'
+])
+.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+        .state('home', {
+            url: '/home',
             templateUrl: 'app/home/home.partial.html'
         })
-        .when('/about', {
-            controller: 'simpleController',
+        .state('about', {
+            url: '/about',
             templateUrl: 'app/about/about.partial.html'
-        })
-        .otherwise({ redirectTo: '/home' });
-});
-
-demoApp.controller('simpleController', function($scope) {
+        });
+})
+.controller('simpleController', function($scope) {
     $scope.customers = [
         { name: 'Alice', city: 'Miami' },
         { name: 'Bob', city: 'New York' },
