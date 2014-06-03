@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" data-ng-app="">
     <head>
         <meta charset="utf-8">
 
         <title>AngularJS Sandbox</title>
-
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     </head>
 
     <body>
-        <p>Hello World!</p>
+        <p>Name: <input type="text" data-ng-model="name"></p>
+        <p>Hello, {{ name }}!</p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     </body>
 </html>
