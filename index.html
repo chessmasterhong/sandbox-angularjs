@@ -7,8 +7,14 @@
     </head>
 
     <body>
-        <p>Name: <input type="text" data-ng-model="name"></p>
-        <p>Hello, {{ name }}!</p>
+        <div class="container" data-ng-init="names=['Alice', 'Bob', 'Carol', 'Dave', 'Eve', 'Frank']">
+            <p>Name: <input type="text" data-ng-model="name"></p>
+            <p>Hello, {{ name }}!</p>
+
+            <ul>
+                <li data-ng-repeat="personName in names">{{ personName }}</li>
+            </ul>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     </body>
