@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>About</h1>
+    <p>Name: <input type="text" data-ng-model="name"></p>
+    <p>Hello, {{ name }}!</p>
+
+    <ul>
+        <li data-ng-repeat="customer in customers | filter: city">{{ customer.name }} - {{ customer.city }}</li>
+    </ul>
+
+    <a href="#">About</a>
+</div>
