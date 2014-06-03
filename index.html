@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <div data-ng-init="customers=[{ name: 'Alice', city: 'Miami' }, { name: 'Bob', city: 'New York' }, { name: 'Carol', city: 'Memphis' }, { name: 'Dave', city: 'Los Angeles' }, { name: 'Eve', city: 'Honolulu' }, { name: 'Frank', city: 'Houston' }]">
+        <div data-ng-controller="simpleController">
             <p>Name: <input type="text" data-ng-model="name"></p>
             <p>Hello, {{ name }}!</p>
 
@@ -16,6 +16,20 @@
             </ul>
         </div>
 
+
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+
+        <script>
+            function simpleController($scope) {
+                $scope.customers = [
+                    { name: 'Alice', city: 'Miami' },
+                    { name: 'Bob', city: 'New York' },
+                    { name: 'Carol', city: 'Memphis' },
+                    { name: 'Dave', city: 'Los Angeles' },
+                    { name: 'Eve', city: 'Honolulu' },
+                    { name: 'Frank', city: 'Houston' }
+                ];
+            }
+        </script>
     </body>
 </html>
