@@ -3,14 +3,18 @@ angular.module('demoApp', [
 ])
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('home', {
+        .state('/', {
             url: '/home',
-            templateUrl: 'app/home/home.partial.html'
+            templateUrl: 'app/home/home.partial.html',
+            controller: 'simpleController'
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'app/about/about.partial.html'
+            templateUrl: 'app/about/about.partial.html',
+            controller: 'simpleController'
         });
+
+    $urlRouterProvider.otherwise('/home');
 })
 .controller('simpleController', function($scope) {
     $scope.customers = [
