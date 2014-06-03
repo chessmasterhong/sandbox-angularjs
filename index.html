@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" data-ng-app="">
+<html lang="en-us" data-ng-app="demoApp">
     <head>
         <meta charset="utf-8">
 
@@ -20,7 +20,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 
         <script>
-            function simpleController($scope) {
+            var demoApp = angular.module('demoApp', []);
+
+            demoApp.controller('simpleController', function($scope) {
                 $scope.customers = [
                     { name: 'Alice', city: 'Miami' },
                     { name: 'Bob', city: 'New York' },
@@ -29,7 +31,7 @@
                     { name: 'Eve', city: 'Honolulu' },
                     { name: 'Frank', city: 'Houston' }
                 ];
-            }
+            });
         </script>
     </body>
 </html>
