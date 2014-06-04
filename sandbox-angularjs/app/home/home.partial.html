@@ -1,17 +1,27 @@
 <div class="container">
     <h1>Home</h1>
-    <p>Name: <input type="text" data-ng-model="filter.name"></p>
-    <p>Hello, {{ name }}!</p>
 
-    <ul>
-        <li data-ng-repeat="customer in customers | filter: filter.name">{{ customer.name }} - {{ customer.city }}</li>
-    </ul>
+    <p>Search by name: <input type="text" data-ng-model="filter.name"></p>
+    <p>Searching for: {{ name }}</p>
+
+    <table border=1>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="customer in customers | filter: filter.name">
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.city }}</td>
+            </tr>
+        </tbody>
+    </table>
 
     <p>
         Customer Name: <input type="text" data-ng-model="newCustomer.name"><br>
         Customer City: <input type="text" data-ng-model="newCustomer.city"><br>
         <button data-ng-click="addCustomer()">Add Customer</button>
     </p>
-
-    <a href="#/about">About</a>
 </div>

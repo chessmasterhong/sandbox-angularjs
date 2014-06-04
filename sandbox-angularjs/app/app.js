@@ -6,7 +6,7 @@ angular.module('demoApp', [
         .state('/', {
             url: '/home',
             templateUrl: 'app/home/home.partial.html',
-            controller: 'simpleController'
+            controller: 'simpleController',
         })
         .state('about', {
             url: '/about',
