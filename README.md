@@ -1,4 +1,4 @@
-# sandbox-angularjs
+# AngularJS Sandbox
 
 Practice application of my first attempt at learning [AngularJS](http://angularjs.org).
 
@@ -11,4 +11,12 @@ Practice application of my first attempt at learning [AngularJS](http://angularj
 * [http://github.com/mgechev/angularjs-style-guide](http://github.com/mgechev/angularjs-style-guide)
 * [http://medium.com/opinionated-angularjs/scalable-code-organization-in-angularjs-9f01b594bf06](http://medium.com/opinionated-angularjs/scalable-code-organization-in-angularjs-9f01b594bf06)
 * [http://stackoverflow.com/questions/18542353/angularjs-folder-structure](http://stackoverflow.com/questions/18542353/angularjs-folder-structure)
+
+### One-way data binding ($scope --> view)
+
+* [http://github.com/ngbp/ngbp/blob/v0.3.2-release/src/app/app.js](http://github.com/ngbp/ngbp/blob/v0.3.2-release/src/app/app.js)
+* [http://stackoverflow.com/questions/22300320/angular-ui-router-changing-title-on-statechangesuccess-event-fires-too-earl](http://stackoverflow.com/questions/22300320/angular-ui-router-changing-title-on-statechangesuccess-event-fires-too-earl)
+* [http://jaketrent.com/post/change-page-title-angular-route](http://jaketrent.com/post/change-page-title-angular-route)
+* [http://coderwall.com/p/vcfo4q](http://coderwall.com/p/vcfo4q)
+
 
