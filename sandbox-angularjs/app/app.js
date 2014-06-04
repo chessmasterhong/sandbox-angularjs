@@ -7,14 +7,21 @@ angular.module('demoApp', [
             url: '/home',
             templateUrl: 'app/home/home.partial.html',
             controller: 'simpleController',
+            data: { pageTitle: 'Home' }
         })
         .state('about', {
             url: '/about',
             templateUrl: 'app/about/about.partial.html',
-            controller: 'simpleController'
+            controller: 'simpleController',
+            data: { pageTitle: 'About' }
         });
 
     $urlRouterProvider.otherwise('/home');
+})
+.controller('appController', function($scope, $location) {
+    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+        $scope.pageTitle = toState.data.pageTitle;
+    });
 })
 .controller('simpleController', function($scope) {
     $scope.customers = [
