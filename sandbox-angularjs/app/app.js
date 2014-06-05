@@ -7,6 +7,8 @@ angular.module('demoApp', [
     $urlRouterProvider.otherwise('/');
 })
 .controller('appController', function($scope, $location) {
+    $scope.siteTitle = 'Demo App';
+
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $scope.pageTitle = toState.data.pageTitle;
     });
