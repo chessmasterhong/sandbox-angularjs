@@ -21,13 +21,13 @@ header {
         -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
         -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
     color: white;
-    height: 90px;
-    font-size: 32px;
-    margin: 20px 20px 5px;
-    padding: 10px 20px 0 40px;
+    font-size: xx-large;
+    height: 115px;
+    margin: 5px 20px;
+    padding: 35px 20px 35px 40px;
 }
 
-header h1 {
+header h1, header h2, header h3, header h4, header h5, header h6 {
     margin: 0;
     padding: 0;
 }
@@ -42,22 +42,18 @@ nav ul {
     list-style-type: none;
     margin: 5px 0 15px;
     overflow: auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 nav ul li {
     float: left;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
 }
 
 nav ul li a {
     color: white;
     display: block;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
+    padding: 5px 20px;
     text-decoration: none;
 }
 
@@ -91,7 +87,7 @@ footer {
         -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
     clear: both;
     font-size: x-small;
-    margin: 5px 20px 20px;
+    margin: 5px 20px;
     padding: 5px 10px;
     text-align: center;
 }
