@@ -5,11 +5,11 @@ angular.module('demoApp.home', [
     $stateProvider.state('home', {
         url: '/',
         templateUrl: 'app/home/home.partial.html',
-        controller: 'simpleController',
+        controller: 'homeController',
         data: { pageTitle: 'Home' }
     });
 })
-.controller('simpleController', function($scope) {
+.controller('homeController', function($scope) {
     $scope.customers = [
         { name: 'Alice', city: 'Miami' },
         { name: 'Bob', city: 'New York' },
