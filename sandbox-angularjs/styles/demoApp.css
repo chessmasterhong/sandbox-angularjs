@@ -1,0 +1,8 @@
+#background {
+    background: url('../assets/bkgnd.jpg') no-repeat center center;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
