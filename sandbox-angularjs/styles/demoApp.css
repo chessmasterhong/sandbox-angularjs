@@ -5,14 +5,30 @@ body {
 }
 
 #background {
-    /* background: url('../assets/bkgnd.jpg') no-repeat center center; */
-    background: #689976;
-        background-color: linear-gradient(#689976, #ACDACC);
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
     z-index: -1;
+}
+
+#background #image {
+    background: url('../assets/bkgnd.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+#background #gradient {
+    background: linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
+        background: -o-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
+        background: -ms-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
+        background: -moz-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
+        background: -webkit-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -22,12 +38,12 @@ header {
         -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
     color: white;
     font-size: xx-large;
-    height: 115px;
+    height: 90px;
     margin: 5px 20px;
-    padding: 35px 20px 35px 40px;
+    padding: 35px 20px 35px 50px;
 }
 
-header h1, header h2, header h3, header h4, header h5, header h6 {
+header * {
     margin: 0;
     padding: 0;
 }
