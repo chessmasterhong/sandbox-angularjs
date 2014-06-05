@@ -13,6 +13,7 @@
     <body>
         <div id="background"></div>
 
+        <!-- Header -->
         <header>
             <h1 data-ng-bind="pageTitle"></h1>
         </header>
@@ -22,11 +23,16 @@
             <ul>
                 <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#/about"><i class="fa fa-users"></i> About</a></li>
+                <li><a href="#/contact"><i class="fa fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
 
         <!-- Placeholder for views -->
         <div id="content" data-ui-view=""></div>
+
+        <!-- Footer -->
+        <footer>An AngularJS demo app.</footer>
+
 
         <!-- Javascript libraries -->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
