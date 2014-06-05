@@ -4,7 +4,9 @@ html, body {
 }
 
 #background {
-    background: url('../assets/bkgnd.jpg') no-repeat center center;
+    /* background: url('../assets/bkgnd.jpg') no-repeat center center; */
+    background: #689976;
+        background-color: linear-gradient(#689976, #ACDACC);
     height: 100%;
     position: absolute;
     top: 0px;
@@ -13,12 +15,15 @@ html, body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
     color: white;
-    height: 80px;
+    height: 90px;
     font-size: 32px;
     margin: 20px 20px 5px;
-    padding: 20px 40px;
+    padding: 35px 20px 0 40px;
 }
 
 header h1 {
@@ -27,18 +32,30 @@ header h1 {
 }
 
 nav {
-    background-color: white;
-    margin: 5px 20px;
-    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+    margin: 0 20px 5px;
+    padding: 5px 20px;
 }
 
 #content {
-    background-color: white;
-    margin: 5px 250px 5px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+    margin: 5px 245px 5px 20px;
+    padding: 5px 10px;
 }
 
 footer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(20, 20, 20, 0.8);
     font-size: small;
     margin: 5px 20px 20px;
+    padding: 5px 10px;
+    text-align: center;
 }
