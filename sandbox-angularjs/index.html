@@ -4,13 +4,16 @@
         <meta charset="utf-8">
 
         <title data-ng-bind="pageTitle + ' | Demo App'"></title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <h1 data-ng-bind="pageTitle"></h1>
 
         <!-- Navigation -->
-        <a href="#">Home</a> | <a href="#/about">About</a>
+        <a href="#"><i class="fa fa-home"></i> Home</a> | <a href="#/about"><i class="fa fa-users"></i> About</a>
 
         <!-- Placeholder for views -->
         <div data-ui-view=""></div>
