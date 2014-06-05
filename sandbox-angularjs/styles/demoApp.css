@@ -63,6 +63,18 @@ nav ul li a {
 
 nav ul li a:hover { background-color: #777777; }
 
+#sidebar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
+    float: right;
+    height: 100%;
+    margin-right: 20px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
 #content {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
