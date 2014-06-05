@@ -1,6 +1,7 @@
 angular.module('demoApp', [
     'demoApp.home',
     'demoApp.about',
+    'demoApp.contact',
     'ui.router'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
