@@ -12,4 +12,8 @@ angular.module('demoApp', [
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $scope.pageTitle = toState.data.pageTitle;
     });
+
+    $scope.isActive = function(viewLocation) {
+        return viewLocation === $location.path();
+    }
 });
