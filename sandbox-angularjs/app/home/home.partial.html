@@ -1,25 +1,23 @@
-<div class="container">
-    <p>Search by name: <input type="text" data-ng-model="filter.name"></p>
-    <p>Searching for: {{ filter.name }}</p>
+<p>Search by name: <input type="text" data-ng-model="filter.name"></p>
+<p>Searching for: {{ filter.name }}</p>
 
-    <table border=1>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr data-ng-repeat="customer in customers | filter: filter">
-                <td>{{ customer.name }}</td>
-                <td>{{ customer.city }}</td>
-            </tr>
-        </tbody>
-    </table>
+<table border=1>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="customer in customers | filter: filter">
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.city }}</td>
+        </tr>
+    </tbody>
+</table>
 
-    <p>
-        Customer Name: <input type="text" data-ng-model="newCustomer.name"><br>
-        Customer City: <input type="text" data-ng-model="newCustomer.city"><br>
-        <button data-ng-click="addCustomer()">Add Customer</button>
-    </p>
-</div>
+<p>
+    Customer Name: <input type="text" data-ng-model="newCustomer.name"><br>
+    Customer City: <input type="text" data-ng-model="newCustomer.city"><br>
+    <button data-ng-click="addCustomer()">Add Customer</button>
+</p>
