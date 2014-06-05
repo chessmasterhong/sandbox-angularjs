@@ -70,7 +70,7 @@ nav ul li a:hover { background-color: #777777; }
         -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
     float: right;
     height: 100%;
-    margin-right: 20px;
+    margin: 0 20px 5px 0;
     padding: 5px 10px;
     width: 200px;
 }
@@ -89,6 +89,7 @@ footer {
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
         -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
         -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
+    clear: both;
     font-size: x-small;
     margin: 5px 20px 20px;
     padding: 5px 10px;
