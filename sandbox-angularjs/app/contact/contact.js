@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('demoApp.contact', [
     'ui.router'
 ])

@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('demoApp', [
     'demoApp.home',
     'demoApp.about',
