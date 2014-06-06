@@ -12,7 +12,7 @@
         <tr data-ng-repeat="customer in customers | filter: filter">
             <td>{{ customer.name }}</td>
             <td>{{ customer.city }}</td>
-            <td data-simple-checkbox>Visited?</td>
+            <td data-simple-checkbox visited="false">Visited?</td>
         </tr>
     </tbody>
 </table>

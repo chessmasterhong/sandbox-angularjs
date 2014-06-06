@@ -8,9 +8,18 @@ angular.module('demoApp.directives', [])
 
     return {
         restrict: 'A',
-        scope: { data: '=' },
+        scope: { visited: '=' },
         transclude: true,
-        template: template
+        template: template,
+        link: function(scope, element, attributes) {
+            element.click(function() {
+                scope.visited = !scope.visited;
+                console.log(scope.visited);
+            });
+        },
+        controller: function($scope) {
+            console.log($scope.visited);
+        }
     };
 })
 ;
