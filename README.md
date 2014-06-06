@@ -6,6 +6,7 @@ Practice application of my first attempt at learning [AngularJS](http://angularj
 
 ### Project directory structure
 
+* [http://github.com/angular/angular-seed](http://github.com/angular/angular-seed)
 * [http://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub](http://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
 * [http://github.com/ngbp/ngbp](http://github.com/ngbp/ngbp)
 * [http://github.com/mgechev/angularjs-style-guide](http://github.com/mgechev/angularjs-style-guide)
@@ -19,4 +20,7 @@ Practice application of my first attempt at learning [AngularJS](http://angularj
 * [http://jaketrent.com/post/change-page-title-angular-route](http://jaketrent.com/post/change-page-title-angular-route)
 * [http://coderwall.com/p/vcfo4q](http://coderwall.com/p/vcfo4q)
 
+### Bootstrap-like navigation bar active link highlighting
 
+* [http://stackoverflow.com/questions/16199418/how-do-i-implement-the-bootstrap-navbar-active-class-with-angular-js](http://stackoverflow.com/questions/16199418/how-do-i-implement-the-bootstrap-navbar-active-class-with-angular-js)
+* [http://coder1.com/articles/angularjs-managing-active-nav-elements](http://coder1.com/articles/angularjs-managing-active-nav-elements)
