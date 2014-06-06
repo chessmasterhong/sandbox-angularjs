@@ -1,17 +1,15 @@
 'use strict';
 
 angular.module('demoApp.directives', [])
-//.directive('appDirective', function() {})
-.directive('homeDirective', function() {
+.directive('simpleCheckbox', function() {
+    var template = '\
+        <input type="checkbox">\
+    ';
+
     return {
         restrict: 'A',
-        scope: {
-            data: '='
-        },
-        template: 'abc123',
-        //templateUrl: 'partials/_____.partial.html',
+        scope: { data: '=' },
+        template: template
     };
 })
-//.directive('aboutDirective', function() {})
-//.directive('contactDirective', function() {})
 ;
