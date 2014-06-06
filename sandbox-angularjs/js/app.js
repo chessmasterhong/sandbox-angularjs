@@ -2,6 +2,7 @@
 
 angular.module('demoApp', [
     'demoApp.controllers',
+    'demoApp.directives',
     'demoApp.factories',
     'ui.router'
 ])

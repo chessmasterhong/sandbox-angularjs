@@ -25,9 +25,6 @@ angular.module('demoApp.controllers', [])
         });
     }
 })
-.controller('aboutController', function($scope) {
-    // ...
-})
-.controller('contactController', function($scope) {
-    // ...
-});
+.controller('aboutController', function($scope) {})
+.controller('contactController', function($scope) {})
+;

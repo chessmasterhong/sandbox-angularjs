@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('demoApp.factories', [])
-.factory('appFactory', function() {
-    // ...
-})
+//.factory('appFactory', function() {})
 .factory('homeFactory', function() {
     var customers = [
         { name: 'Alice', city: 'Miami' },
@@ -21,9 +19,6 @@ angular.module('demoApp.factories', [])
 
     return factory;
 })
-.factory('aboutFactory', function() {
-    // ...
-})
-.factory('contactFactory', function() {
-    // ...
-});
+//.factory('aboutFactory', function() {})
+//.factory('contactFactory', function() {})
+;
