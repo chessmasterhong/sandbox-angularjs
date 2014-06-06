@@ -1,15 +1,16 @@
 'use strict';
 
-angular.module('demoApp.home', [
-    'ui.router'
-])
-.config(function($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('home', {
-        url: '/',
-        templateUrl: 'app/home/home.partial.html',
-        controller: 'homeController',
-        data: { pageTitle: 'Home' }
+angular.module('demoApp.controllers', [])
+.controller('appController', function($scope, $location) {
+    $scope.siteTitle = 'Demo App';
+
+    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+        $scope.pageTitle = toState.data.pageTitle;
     });
+
+    $scope.isActive = function(viewLocation) {
+        return viewLocation === $location.path();
+    }
 })
 .controller('homeController', function($scope) {
     $scope.customers = [
@@ -27,4 +28,10 @@ angular.module('demoApp.home', [
             city: $scope.newCustomer.city
         });
     }
+})
+.controller('aboutController', function($scope) {
+    // ...
+})
+.controller('contactController', function($scope) {
+    // ...
 });
