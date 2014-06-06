@@ -22,11 +22,11 @@ body {
 }
 
 #background #gradient {
-    background: linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
-        background: -o-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
-        background: -ms-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
-        background: -moz-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
-        background: -webkit-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 25rem);
+    background: linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 60rem);
+        background: -o-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 60rem);
+        background: -ms-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 60rem);
+        background: -moz-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 60rem);
+        background: -webkit-linear-gradient(rgba(20, 20, 20, 0) 100px, rgba(20, 20, 20, 1) 60rem);
     height: 100%;
     width: 100%;
 }
@@ -76,7 +76,7 @@ nav ul li a {
 nav ul li a:hover { background-color: #777777; }
 nav ul li.active { background-color: #606060; }
 
-#sidebar {
+/*#sidebar {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
         -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
@@ -86,14 +86,14 @@ nav ul li.active { background-color: #606060; }
     margin: 0 20px 5px 0;
     padding: 5px 10px;
     width: 200px;
-}
+}*/
 
 #content {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
         -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
         -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.8);
-    margin: 5px 245px 5px 20px;
+    margin: 5px 20px; /* 5px 245px 5px 20px; */
     padding: 5px 30px;
 }
 

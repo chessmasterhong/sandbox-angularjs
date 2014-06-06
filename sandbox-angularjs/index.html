@@ -17,21 +17,28 @@
             <div class="container container-fluid">
                 <!-- Site header -->
                 <div class="navbar-header">
+                    <a class="navbar-brand" href="#">{{ siteTitle }}</a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-0">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">{{ siteTitle }}</a>
                 </div>
 
                 <!-- Site navigation -->
                 <nav id="navbar-collapse-0" class="collapse navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
-                        <li data-ng-class="{ active: isActive('/') }"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                        <li data-ng-class="{ active: isActive('/about') }"><a href="#/about"><i class="fa fa-users"></i> About</a></li>
-                        <li data-ng-class="{ active: isActive('/contact') }"><a href="#/contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                        <li data-ng-class="{ active: isActive('/') }"><a href="#">Home</a></li>
+                        <li data-ng-class="{ active: isActive('/about') }"><a href="#/about">About</a></li>
+                        <li data-ng-class="{ active: isActive('/contact') }"><a href="#/contact">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href=""title="View Profile">Test User</a></li>
+                        <li><a href="" title="Notifications"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="" title="Account Settings"><i class="fa fa-cog"></i></a></li>
+                        <li><a href="" title="Sign Out"><i class="fa fa-power-off"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,7 +47,7 @@
         <!-- Page content -->
         <div id="content">
             <div class="container">
-                <h2 data-ng-bind="pageTitle"></h2>
+                <h2 class="page-header" data-ng-bind="pageTitle"></h2>
                 <div data-ui-view=""></div>
             </div>
         </div>
