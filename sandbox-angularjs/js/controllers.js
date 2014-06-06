@@ -12,15 +12,11 @@ angular.module('demoApp.controllers', [])
         return viewLocation === $location.path();
     }
 })
-.controller('homeController', function($scope) {
-    $scope.customers = [
-        { name: 'Alice', city: 'Miami' },
-        { name: 'Bob', city: 'New York' },
-        { name: 'Carol', city: 'Memphis' },
-        { name: 'Dave', city: 'Los Angeles' },
-        { name: 'Eve', city: 'Honolulu' },
-        { name: 'Frank', city: 'Houston' }
-    ];
+.controller('homeController', function($scope, homeFactory) {
+    $scope.customers = [];
+
+    // Init
+    $scope.customers = homeFactory.getCustomers();
 
     $scope.addCustomer = function() {
         $scope.customers.push({

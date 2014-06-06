@@ -2,6 +2,7 @@
 
 angular.module('demoApp', [
     'demoApp.controllers',
+    'demoApp.factories',
     'ui.router'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
