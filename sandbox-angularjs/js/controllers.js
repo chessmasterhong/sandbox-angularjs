@@ -19,9 +19,16 @@ angular.module('demoApp.controllers', [])
     $scope.customers = homeFactory.getCustomers();
 
     $scope.addCustomer = function() {
+        if(
+            angular.isUndefined($scope.newCustomer.name) ||
+            angular.isUndefined($scope.newCustomer.city) ||
+            !angular.isNumber($scope.newCustomer.visits)
+        ) return;
+
         $scope.customers.push({
             name: $scope.newCustomer.name,
-            city: $scope.newCustomer.city
+            city: $scope.newCustomer.city,
+            visits: $scope.newCustomer.visits
         });
     };
 })
