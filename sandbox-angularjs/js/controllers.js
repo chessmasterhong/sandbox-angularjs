@@ -20,8 +20,9 @@ angular.module('demoApp.controllers', [])
 
     $scope.addCustomer = function() {
         if(
-            angular.isUndefined($scope.newCustomer.name) ||
-            angular.isUndefined($scope.newCustomer.city) ||
+            angular.isUndefined($scope.newCustomer) ||
+            angular.isUndefined($scope.newCustomer.name) || $scope.newCustomer.name === '' ||
+            angular.isUndefined($scope.newCustomer.city) || $scope.newCustomer.city === '' ||
             !angular.isNumber($scope.newCustomer.visits)
         ) return;
 

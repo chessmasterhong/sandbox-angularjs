@@ -19,11 +19,12 @@
     </tbody>
 </table>
 
-<p>
-    Customer Name: <input type="text" data-ng-model="newCustomer.name"><br>
-    Customer City: <input type="text" data-ng-model="newCustomer.city"><br>
+<form>
+    Customer Name: <input type="text" data-ng-model="newCustomer.name" required><br>
+    Customer City: <input type="text" data-ng-model="newCustomer.city" required><br>
+    Customer Visits: <input type="number" data-ng-model="newCustomer.visits" required><br>
     <button data-ng-click="addCustomer()">Add Customer</button>
-</p>
+</form>
 
 <!-- temporary styling -->
 <style>
