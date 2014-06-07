@@ -24,3 +24,8 @@ Practice application of my first attempt at learning [AngularJS](http://angularj
 
 * [http://stackoverflow.com/questions/16199418/how-do-i-implement-the-bootstrap-navbar-active-class-with-angular-js](http://stackoverflow.com/questions/16199418/how-do-i-implement-the-bootstrap-navbar-active-class-with-angular-js)
 * [http://coder1.com/articles/angularjs-managing-active-nav-elements](http://coder1.com/articles/angularjs-managing-active-nav-elements)
+
+### AngularJS with D3.js
+
+* [http://www.ng-newsletter.com/posts/d3-on-angular.html](http://www.ng-newsletter.com/posts/d3-on-angular.html)
+* [http://codepen.io/odiseo42/pen/bCwkv](http://codepen.io/odiseo42/pen/bCwkv)
