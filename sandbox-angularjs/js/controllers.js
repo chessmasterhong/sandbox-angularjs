@@ -25,6 +25,17 @@ angular.module('demoApp.controllers', [])
         });
     }
 })
-.controller('aboutController', function($scope) {})
+.controller('aboutController', function($scope, $http) {
+    $scope.colors = [];
+
+    $http.get('http://localhost/sandbox-angularjs/sandbox-angularjs/js/data.json')
+        .success(function(data, status, headers, config) {
+            console.log(data);
+            $scope.colors = data;
+        })
+        .error(function(data, status, headers, config) {
+            console.log('Error getting JSON.')
+        });
+})
 .controller('contactController', function($scope) {})
 ;
