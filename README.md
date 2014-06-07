@@ -29,3 +29,10 @@ Practice application of my first attempt at learning [AngularJS](http://angularj
 
 * [http://www.ng-newsletter.com/posts/d3-on-angular.html](http://www.ng-newsletter.com/posts/d3-on-angular.html)
 * [http://codepen.io/odiseo42/pen/bCwkv](http://codepen.io/odiseo42/pen/bCwkv)
+
+### Custom form validation
+
+* [http://stackoverflow.com/questions/18261003/angularjs-form-custom-validation-check-if-at-least-one-input-is-empty](http://stackoverflow.com/questions/18261003/angularjs-form-custom-validation-check-if-at-least-one-input-is-empty)
+* [http://stackoverflow.com/questions/16691778/check-if-a-input-box-is-empty](http://stackoverflow.com/questions/16691778/check-if-a-input-box-is-empty)
+* [http://docs.angularjs.org/api/ng/function/angular.isUndefined](http://docs.angularjs.org/api/ng/function/angular.isUndefined)
+* [http://docs.angularjs.org/api/ng/function/angular.isNumber](http://docs.angularjs.org/api/ng/function/angular.isNumber)
