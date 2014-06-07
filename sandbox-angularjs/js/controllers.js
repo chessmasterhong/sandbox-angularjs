@@ -23,7 +23,8 @@ angular.module('demoApp.controllers', [])
             angular.isUndefined($scope.newCustomer) ||
             angular.isUndefined($scope.newCustomer.name) || $scope.newCustomer.name === '' ||
             angular.isUndefined($scope.newCustomer.city) || $scope.newCustomer.city === '' ||
-            !angular.isNumber($scope.newCustomer.visits)
+            !angular.isNumber($scope.newCustomer.visits) ||
+            $scope.newCustomer.visits % 1 !== 0
         ) return;
 
         $scope.customers.push({

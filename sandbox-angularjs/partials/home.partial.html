@@ -19,11 +19,17 @@
     </tbody>
 </table>
 
-<form>
-    Customer Name: <input type="text" data-ng-model="newCustomer.name" required><br>
-    Customer City: <input type="text" data-ng-model="newCustomer.city" required><br>
-    Customer Visits: <input type="number" data-ng-model="newCustomer.visits" required><br>
-    <button data-ng-click="addCustomer()">Add Customer</button>
+<form name="newCustomerForm">
+    Customer Name: <input name="inputName" type="text" data-ng-model="newCustomer.name" required>
+    <span ng-hide="!newCustomerForm.inputName.$error.required">Enter a name.</span><br>
+
+    Customer City: <input name="inputCity" type="text" data-ng-model="newCustomer.city" required>
+    <span ng-hide="!newCustomerForm.inputCity.$error.required">Enter a city.</span><br>
+
+    Customer Visits: <input name="inputVisits" type="number" data-ng-model="newCustomer.visits" required>
+    <span ng-hide="!newCustomerForm.inputVisits.$error.required">Enter a positive integer.</span><br>
+
+    <button data-ng-click="addCustomer()" data-ng-disabled="!newCustomer.name || !newCustomer.city || !newCustomer.visits || newCustomer.visits < 0">Add Customer</button>
 </form>
 
 <!-- temporary styling -->
