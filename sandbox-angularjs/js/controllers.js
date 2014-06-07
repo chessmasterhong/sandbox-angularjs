@@ -37,5 +37,6 @@ angular.module('demoApp.controllers', [])
             console.log('Error getting JSON.')
         });
 })
-.controller('contactController', function($scope) {})
+//.controller('contactController', function($scope) {})
+//.controller('404Controller', function($scope) {})
 ;

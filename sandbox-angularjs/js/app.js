@@ -9,7 +9,7 @@ angular.module('demoApp', [
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
-            url: '/',
+            url: '',
             templateUrl: 'partials/home.partial.html',
             controller: 'homeController',
             data: { pageTitle: 'Home' }
@@ -20,12 +20,18 @@ angular.module('demoApp', [
             controller: 'aboutController',
             data: { pageTitle: 'About' }
         })
-        $stateProvider.state('contact', {
+        .state('contact', {
             url: '/contact',
             templateUrl: 'partials/contact.partial.html',
-            controller: 'contactController',
+            //controller: 'contactController',
             data: { pageTitle: 'Contact' }
+        })
+        .state('404', {
+            url: '/404',
+            templateUrl: 'partials/404.partial.html',
+            //controller: '404Controller',
+            data: { pageTitle: 'Page Not Found' }
         });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/404');
 });
