@@ -8,7 +8,7 @@ angular.module('demoApp.directives', [])
 
     return {
         restrict: 'A',
-        scope: { visited: '=' },
+        scope: { data: '=visited' },
         transclude: true,
         template: template,
         link: function(scope, element, attributes) {
@@ -19,6 +19,20 @@ angular.module('demoApp.directives', [])
         },
         controller: function($scope) {
             console.log($scope.visited);
+        }
+    };
+})
+.directive('sampleBarChart', function($parse) {
+    return {
+        restrict: 'A',
+        scope: { data: '=chartData' },
+        link: function(scope, element, attributes) {
+            d3.select(element[0])
+                .append('div').attr('class', 'chart')
+                .selectAll('div')
+                .data(scope.data).enter().append('div')
+                .style('width', function(d) { return d + '%'; })
+                .text(function(d) { return d + '%'; });
         }
     };
 })

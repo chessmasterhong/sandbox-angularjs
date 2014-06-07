@@ -6,12 +6,14 @@
         <tr>
             <th>Name</th>
             <th>City</th>
+            <th>Visits</th>
         </tr>
     </thead>
     <tbody>
         <tr data-ng-repeat="customer in customers | filter: filter">
             <td>{{ customer.name }}</td>
             <td>{{ customer.city }}</td>
+            <td>{{ customer.visits }}</td>
             <td data-simple-checkbox visited="false">Visited?</td>
         </tr>
     </tbody>
@@ -22,3 +24,14 @@
     Customer City: <input type="text" data-ng-model="newCustomer.city"><br>
     <button data-ng-click="addCustomer()">Add Customer</button>
 </p>
+
+<!-- temporary styling -->
+<style>
+    .chart { background: #ddd; }
+    .chart div {
+        background-color: #f80;
+        margin: 2px;
+        text-align: right;
+    }
+</style>
+<div data-sample-bar-chart chart-data="[10,20,30,40,50,60,70,80,90]"></div>
