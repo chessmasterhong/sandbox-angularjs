@@ -27,10 +27,15 @@ angular.module('demoApp.directives', [])
         restrict: 'A',
         scope: { data: '=chartData' },
         link: function(scope, element, attributes) {
+            var d = [];
+            angular.forEach(scope.data, function(v) {
+                d.push(v.visits);
+            });
+
             d3.select(element[0])
                 .append('div').attr('class', 'chart')
                 .selectAll('div')
-                .data(scope.data).enter().append('div')
+                .data(d).enter().append('div')
                 .style('width', function(d) { return d + '%'; })
                 .text(function(d) { return d + '%'; });
         }
