@@ -14,11 +14,8 @@ angular.module('demoApp.directives', [])
         link: function(scope, element, attributes) {
             element.click(function() {
                 scope.visited = !scope.visited;
-                console.log(scope.visited);
+                //console.log(scope.visited);
             });
-        },
-        controller: function($scope) {
-            console.log($scope.visited);
         }
     };
 })
