@@ -4,6 +4,7 @@ angular.module('demoApp', [
     'demoApp.controllers',
     'demoApp.directives',
     'demoApp.factories',
+    'demoApp.filters',
     'ui.router'
 ])
 .config(function($stateProvider, $urlRouterProvider) {

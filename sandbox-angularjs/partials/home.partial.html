@@ -1,5 +1,5 @@
 <p>Search by name: <input type="text" data-ng-model="filter.name"></p>
-<p>Searching for: {{ filter.name }}</p>
+<p>Searching for: {{ filter.name }} {{ filter.name | simpleFilter }}</p>
 
 <table border=1>
     <thead>
