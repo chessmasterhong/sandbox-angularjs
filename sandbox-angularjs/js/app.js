@@ -27,6 +27,12 @@ angular.module('demoApp', [
             //controller: 'contactController',
             data: { pageTitle: 'Contact' }
         })
+        .state('login', {
+            url: '/login',
+            templateUrl: 'partials/login.partial.html',
+            //controller: 'loginController',
+            data: { pageTitle: 'Login' }
+        })
         .state('404', {
             url: '/404',
             templateUrl: 'partials/404.partial.html',
