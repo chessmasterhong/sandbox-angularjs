@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('demoApp.directives', [])
-.directive('simpleBarChart', function() {
+demoApp.directive('simpleBarChart', function() {
     return {
         restrict: 'A',
         scope: { data: '=chartData' },

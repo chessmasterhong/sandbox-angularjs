@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('demoApp.directives', [])
-.directive('simpleCheckbox', function() {
+demoApp.directive('simpleCheckbox', function() {
     var template = '\
         <input type="checkbox"> <span ng-transclude></span>\
     ';

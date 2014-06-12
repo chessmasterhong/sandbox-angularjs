@@ -1,10 +1,6 @@
 'use strict';
 
-angular.module('demoApp', [
-    'demoApp.controllers',
-    'demoApp.directives',
-    'demoApp.factories',
-    'demoApp.filters',
+var demoApp = angular.module('demoApp', [
     'ui.router'
 ])
 .config(function($stateProvider, $urlRouterProvider) {

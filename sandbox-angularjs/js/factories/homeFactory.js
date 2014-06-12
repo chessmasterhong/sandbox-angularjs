@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('demoApp.factories', [])
-.factory('homeFactory', function() {
+demoApp.factory('homeFactory', function() {
     var customers = [
         { name: 'Alice', city: 'Miami'      , visits:  6 },
         { name: 'Bob'  , city: 'New York'   , visits: 11 },
